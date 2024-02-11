@@ -31,12 +31,14 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             onPressed: () {},
             icon: const Icon(
               Icons.search,
+              color: Colors.white,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
               Icons.more_vert,
+              color: Colors.white,
             ),
           ),
         ],
@@ -81,6 +83,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         onPressed: () {},
         child: const Icon(
           Icons.message,
+          color: Colors.white,
         ),
       ),
       body: TabBarView(
