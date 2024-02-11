@@ -190,11 +190,6 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                       chatsMessageList.add(chat);
 
                       _chatController.clear();
-                      // chatsMessageList.add(ChatMessageModel(
-                      //   messageContent: "Prueba directa",
-                      //   messageType: "other",
-                      // ));
-
                       setState(() {});
 
                     },

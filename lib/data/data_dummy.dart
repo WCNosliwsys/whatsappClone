@@ -4,9 +4,9 @@ import 'package:flutter_codigo_whatsapp_clone/models/chat_model.dart';
 List<ChatModel> chats = [
   ChatModel(
     avatarUrl:
-        "https://images.pexels.com/photos/1845534/pexels-photo-1845534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    username: "Ximena Lopez",
-    message: "Ya he enviando el encargo por el courier",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7GJ_y4FHDdmSTir6rbY1pSUmHx-kQ0g1OIoodVhSm4SwVXx1USdSaIwy9hCvW042MyQ&usqp=CAU",
+    username: "Wilson Callisaya",
+    message: "Ya realice el trabajo",
     time: "10:20",
     countMessage: 1,
     isTyping: false,
