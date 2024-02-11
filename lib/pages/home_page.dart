@@ -8,8 +8,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   TabController? _tabController;
 
   @override
@@ -23,7 +22,10 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("WhatsApp"),
+        title: Text(
+          "WhatsApp",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -40,6 +42,8 @@ class _HomePageState extends State<HomePage>
         ],
         bottom: TabBar(
           controller: _tabController,
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.white.withOpacity(0.4),
           indicatorColor: Colors.white,
           indicatorWeight: 3.5,
           tabs: const [
@@ -81,12 +85,7 @@ class _HomePageState extends State<HomePage>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: [
-          Center(child: Text("Camera")),
-          ChatPage(),
-          StatusPage(),
-          CallPage()
-        ],
+        children: [Center(child: Text("Camera")), ChatPage(), StatusPage(), CallPage()],
       ),
     );
   }
